@@ -17,6 +17,6 @@ scp ./target/x86_64-unknown-linux-musl/release/vacuum rancher@XXX:/home/rancher/
 ```bash
 chmod +x ./vacuum
 sudo service k3s-service stop
-sudo vacuum /var/lib/rancher/k3s/server/db/state.db
+sudo ./vacuum /var/lib/rancher/k3s/server/db/state.db
 sudo service k3s-service start
 ```
